@@ -10,5 +10,5 @@ func NewOrGate(a, b, out *Wire) *OrGate {
 }
 
 func (o *OrGate) Evaluate() {
-	o.Out.Set(o.A.Get() && o.B.Get())
+	o.Out.Set(o.A.Get() || o.B.Get())
 }
